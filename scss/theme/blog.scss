@@ -1,0 +1,81 @@
+@import '../services/constants.scss';
+
+.blog {
+  .span4 {
+    width: 350px;
+    float: left;
+    display: inline-block;
+    margin-right: 65px;
+    margin-bottom: 50px;
+
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+
+    .page-header {
+      float: left;
+      width: 295px;
+      margin-bottom: 10px;
+
+      a {
+        font-size: 25px;
+        font-family: $font-black;
+        color: $gray-dark;
+        line-height: 30px;
+
+        &:hover {
+          color: $blue-light;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .article-info {
+      margin: 0;
+    }
+  }
+
+  .published time {
+    float: left;
+    color: $blue-light;
+    font-size: 35px;
+    font-family: $font-black;
+    line-height: 27px;
+    margin: 12px 15px 0 -41px;
+    display: block;
+
+    span {
+      font-family: $font-medium;
+      font-size: 20px;
+      display: block;
+    }
+  }
+
+  .page-header h2 {
+    margin: 0;
+  }
+
+  p:not(.readmore) {
+    margin: 0;
+    clear: both;
+    height: 104px;
+    overflow: hidden;
+  }
+
+  .readmore a {
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid $blue-light;
+    border-radius: 15px;
+    padding: 7px 20px;
+    font-family: $font-black;
+    display: inline-block;
+
+    &:hover {
+      color: $white;
+      background: $blue-light;
+      text-decoration: none;
+    }
+  }
+}

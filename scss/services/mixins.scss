@@ -1,0 +1,65 @@
+@import './functions.scss';
+
+@mixin respond($data) {
+  @if type_of($data)==string {
+    @each $size in $data {
+      $media: $size;
+
+      @if $size=='xxs' {
+        $media: $size-xxs;
+      }
+
+      @else if $size=='xs' {
+        $media: $size-xs;
+      }
+
+      @else if $size=='sm' {
+        $media: $size-sm;
+      }
+
+      @else if $size=='md' {
+        $media: $size-md;
+      }
+
+      @else if $size=='lg' {
+        $media: $size-lg;
+      }
+
+      @else if $size=='xl' {
+        $media: $size-xl;
+      }
+
+      @else if $size=='xxl' {
+        $media: $size-xxl;
+      }
+
+      @media only screen and #{$media} {
+        @content;
+      }
+    }
+  }
+
+  @else {
+    @media only screen and #{respond($data)} {
+      @content;
+    }
+  }
+}
+
+@mixin box-sizing($type: border-box) {
+  -moz-box-sizing: $type;
+  -webkit-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin padding-box($padding, $type: null) {
+  @if($type) {
+    @include box-sizing($type)
+  }
+
+  @else {
+    @include box-sizing
+  }
+
+  padding: $padding;
+}

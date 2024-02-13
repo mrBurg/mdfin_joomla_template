@@ -1,0 +1,27 @@
+@import '../services/constants.scss';
+
+.bread {
+  .breadcrumb {
+    display: flex;
+    list-style: none;
+
+    li {
+      &.active {
+        margin: 0;
+      }
+
+      margin-right: 0.5em;
+      font-family: $font-regular;
+      font-size: 0.7em;
+
+      a {
+        font-size: 1em;
+        font-family: $font-regular;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

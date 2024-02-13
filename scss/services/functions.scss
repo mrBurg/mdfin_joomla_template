@@ -1,0 +1,7 @@
+@function golden-ratio() {
+  @return 1.61803398875;
+}
+
+@function respond($data) {
+  @return "(max-width: #{ $data }px)";
+}

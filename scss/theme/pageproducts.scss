@@ -1,0 +1,77 @@
+@import '../services/constants.scss';
+@import '../services/mixins.scss';
+.item-pageproducts {
+  .article {
+    @extend %display-flex;
+
+    @include respond(sm) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .left,
+  .right {
+    @extend %display-flex;
+    flex: 1 0 50%;
+    flex-flow: column nowrap;
+  }
+
+  .left {
+    align-items: flex-start;
+
+    .box {
+      margin-bottom: 20px;
+    }
+    
+    .email-cont {
+      font-family: $font-medium;
+
+      img {
+        margin-right: 0.75em;
+      }
+    }
+
+    .more-wrap {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .custom-more {
+        background: $blue-light;
+        border: 3px solid $blue-light;
+        display: block;
+        font-family: Roboto-Black;
+        font-size: 1em;
+        height: 30px;
+        width: 100px;
+        text-shadow: none;
+        text-align: center;
+        transition: all 0.2s;
+        color: $white;
+        line-height: 30px;
+        text-transform: capitalize;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: $white;
+          color: $blue-light;
+        }
+      }
+
+      @include respond('md') {
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .custom-more {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .right {
+    align-items: flex-end;
+  }
+}

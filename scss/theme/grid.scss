@@ -1,0 +1,107 @@
+@import '../services/constants.scss';
+@import '../services/mixins.scss';
+
+.wrapper {
+  @extend %display-flex;
+  flex-flow: column nowrap;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+
+  &__content {
+    @extend %display-flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    padding: 0 0.5em 0.5em;
+
+    @include respond(xl) {
+      padding: 0;
+    }
+  }
+}
+
+.mainarea {
+  @extend %display-flex;
+  justify-content: center;
+  content: .5em;
+  width: 100%;
+
+  .supwrap {
+    max-width: 60em;
+    width: 100%;
+  }
+}
+
+.main-content {
+  @extend %display-flex;
+  margin-top: 1em;
+
+  @include respond(xs) {
+    flex-direction: column;
+  }
+
+  @media (min-width: #{$xs + 1}px) and (max-width: #{$md}px) {
+    display: block !important;
+  }
+
+  .item-page {
+    font-size: 0.9em;
+
+    .page-header {
+
+      // margin: 1em 0;
+      @include respond(xs) {
+        margin: 1em 0
+      }
+    }
+
+    ul,
+    ol {
+      list-style: none;
+
+      li {
+
+        &::before {
+          margin-right: 0.5em;
+        }
+
+        ul,
+        ol {
+          padding-left: 0.5em;
+        }
+
+        ul {
+          li {
+            &::before {
+              content: '\2d';
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        &::before {
+          content: '\25cf';
+          color: $gray;
+          font-size: 0.6em;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    ol {
+      counter-reset: item;
+
+      li {
+        counter-increment: item;
+
+        &:before {
+          content: counter(item);
+        }
+      }
+    }
+  }
+}

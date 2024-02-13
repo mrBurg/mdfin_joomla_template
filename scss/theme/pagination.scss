@@ -1,0 +1,76 @@
+@import '../services/constants.scss';
+
+.pagination {
+  clear: both;
+  text-align: center;
+  margin: 30px 0 10px;
+
+  &-list {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      padding-bottom: 10px;
+      width: 50px;
+      text-align: center;
+
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
+
+      &.active {
+        border-bottom: 3px solid $blue-light;
+
+        a {
+          color: $blue-light;
+        }
+      }
+    }
+
+    a {
+      font-size: 20px;
+      font-family: $font-bold;
+      color: $pagination;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &[title="Next"] {
+        background: url('../images/page-arrow.png') no-repeat;
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+      }
+
+      &[title="Prev"] .icon-previous {
+        background: url('../images/page-arrow.png') no-repeat 0 -27px;
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+      }
+    }
+
+    .disabled {
+      .icon-previous {
+        background: url('../images/page-arrow.png') no-repeat 0 -90px;
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+      }
+
+      .icon-next {
+        background: url('../images/page-arrow.png') no-repeat 0 -59px;
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+      }
+    }
+  }
+}

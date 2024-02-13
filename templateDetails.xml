@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>mdfin</name>
+	<version>1.0</version>
+	<creationDate>12/30/2015</creationDate>
+	<author>Sam Zam</author>
+	<authorEmail>zamaj@apelsun.ua</authorEmail>
+	<copyright>Copyright (C) 2015. All rights reserved.</copyright>
+	<description>MDFinance</description>
+	<files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>scss</folder>
+        <folder>less</folder>
+    </files>
+    <positions>        
+        <position>topmenu</position>
+        <position>showcase</position>
+        <position>bread</position>
+        <position>sidebar</position>
+        <position>content</position> 
+        <position>footer-menu</position>
+    </positions>
+</extension>

@@ -1,0 +1,61 @@
+@import '../services/constants.scss';
+
+.showcase {
+
+  .wk-slideshow {
+    margin: auto !important;
+
+    img {
+      min-width: 59em;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      max-height: 19.9;
+    }
+
+    @include respond(xl) {
+      margin: 0 !important;
+    }
+  }
+
+  .moduletable {
+    position: relative;
+    margin-bottom: -3em;
+    top: -11.85em;
+    text-transform: capitalize;
+    height: 3em;
+    font-family: $font-bold;
+    z-index: 99;
+    text-align: right;
+    float: right;
+
+    &-categ {
+      max-width: 60em;
+    }
+
+    .capt .caption {
+      position: inherit;
+      color: $blue;
+      font-size: 1.75em;
+      line-height: 2em;
+      white-space: nowrap;
+    }
+
+    $caption: (news: ('bg-about.png', 10px 52px),
+    contacts: ('bg-contacts.png', 10px 44px),
+    about: ('bg-about.png', 10px 49px),
+    comm: ('caption-bg.png', 10px 45px),
+    partners: ('bg-investors.png', 10px 34px),
+    investors: ('bg-investors.png', 10px 28px),
+    clients: ('bg-investors.png', 10px 49px));
+
+    @each $name,
+    $data in $caption {
+      &.#{$name} .capt .caption {
+        background: url('../images/#{nth($data, 1)}') no-repeat right center;
+        padding: nth($data, 2);
+      }
+    }
+
+  }
+}

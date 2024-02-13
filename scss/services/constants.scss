@@ -1,0 +1,49 @@
+$prefixes: -webkit-,
+-moz-,
+-ms-,
+-o-;
+
+$xxs: 320;
+$xs: 480;
+$sm: 640;
+$md: 768;
+$lg: 960;
+$xl: 1200;
+$xxl: 1600;
+
+$size-xxs: "(max-width: #{ $xxs }px)";
+$size-xs: "(max-width: #{ $xs }px)";
+$size-sm: "(max-width: #{ $sm }px)";
+$size-md: "(max-width: #{ $md - 1 }px)";
+$size-lg: "(min-width: #{ $lg }px) and (max-width: #{ $xl - 1 }px)";
+$size-xl: "(min-width: #{ $xl }px)";
+$size-xxl: "(min-width: #{ $xxl }px)";
+
+$font-size: 20px;
+$min-width: 16em;
+$max-width: 68em;
+
+$font-regular: Roboto-Regular;
+$font-light: Roboto-Light;
+$font-medium: Roboto-Medium;
+$font-bold: Roboto-Bold;
+$font-black: Roboto-Black;
+
+$white: #fff;
+$black: #000;
+$yellow: #ff0;
+$red:#f00;
+
+$blue: #002e6a;
+$blue-misty: #8092a9;
+$blue-light: #00aeef;
+$blue-dark: #002453;
+$blue-lighter: #EAF2FC;
+
+$gray: #c0c0c0;
+$gray-light: #f7f7f7;
+$gray-dark: #373742;
+
+$pagination: #4b4b4b;
+$phone: #e7e7e7;
+$contacts: #898989;

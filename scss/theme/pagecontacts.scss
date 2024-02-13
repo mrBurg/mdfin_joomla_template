@@ -1,0 +1,36 @@
+@import '../services/constants.scss';
+
+.item-pagecontacts {
+
+  .article {
+    @extend %display-flex;
+
+    @include respond(sm) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .left,
+  .right {
+    @extend %display-flex;
+    flex: 1 0 50%;
+    flex-flow: column nowrap;
+  }
+
+  .left {
+    align-items: flex-start;
+
+    .email-cont {
+      font-family: $font-medium;
+
+      img {
+        margin-right: 0.75em;
+      }
+    }
+  }
+
+  .right {
+    align-items: flex-end;
+  }
+}

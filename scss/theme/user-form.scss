@@ -1,0 +1,74 @@
+#userForm {
+  margin: 0;
+
+  h2 {
+    color: $blue;
+    font-family: $font-black;
+    font-size: 1.5em;
+    margin: 0 0 0.66em;
+    text-align: center;
+  }
+
+  .rsform {
+    &-block {
+      margin-bottom: 0.7em !important;
+
+      .formControls {
+        margin: 0;
+      }
+
+      .formControlLabel,
+      .formValidation,
+      .formDescription {
+        display: none;
+      }
+
+      input,
+      textarea {
+        @include box-sizing;
+        border: 1px solid $contacts;
+        border-radius: 0;
+        color: $contacts;
+        font-family: $font-regular;
+        width: 100%;
+
+        &.rsform-error {
+          border-color: $red;
+        }
+      }
+
+      input {
+        height: 3.23em;
+        margin: 0;
+        padding: 0.30em;
+      }
+
+      textarea {
+        height: 100px;
+        resize: none;
+      }
+
+      &-recaptcha [id^=g-recaptcha]>div>div {
+        margin: auto !important;
+      }
+    }
+
+    &-submit-button {
+      background: $blue-light;
+      border: 3px solid $blue-light;
+      display: block;
+      font-family: $font-black;
+      font-size: 1em;
+      height: 3em;
+      margin: auto;
+      text-shadow: none;
+      text-align: center;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $white;
+        color: $blue-light;
+      }
+    }
+  }
+}

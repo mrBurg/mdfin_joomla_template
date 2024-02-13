@@ -1,0 +1,132 @@
+<div class="product-Scoring">
+	<div class="ready-use">
+		<div class="wrap">
+			<div class="ready-use-text">
+				<div class="ready-use-text__title">Ready-to-use AI Scoring for Banks and MFOs</div>
+				<div class="ready-use-text__text">Scoring services by MDFin are designed to help Banks and MFOs to detect fraud, assess credit risks and manage the level of product profitability. </div>
+			</div>
+			<div class="ready-use-img"><img src="templates/mdfin/images/icon-scor.svg" alt="icon-scor"></div>
+		</div>
+	</div>
+	<div class="solution">
+		<div class="section-title">The Ultimate solution for lending business </div>
+		<div class="solution__text">Based on real samples, we’ve created a set of scoring tools for more effective<br> launch and development of credit products, as: <br>PayDay loan, Personal loan, Credit card. </div>
+		
+		<div class="items1">
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-money.svg" alt="icon-money"></div>
+				<div class="item__title">Time-saving</div>
+				<div class="item__text">The service doesn't require any time for the integration. Just send the questionnaire data of your client via API and get the score value in return. </div>
+			</div>
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-sys.svg" alt="icon-sys"></div>
+				<div class="item__title">Systematic approach</div>
+				<div class="item__text">In addition to the score value, we provide you with workable strategies for applying it to your products </div>
+			</div>
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-rslt.svg" alt="icon-rslt"></div>
+				<div class="item__title">Results-oriented</div>
+				<div class="item__text">Our task is to make sure that you receive a positive economic effect from day one. </div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="items2">
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-creds.svg" alt="icon-creds"></div>
+				<div class="item__text">
+					<div class="item__text-title">Credit scoring - </div>
+					<div class="item__text-text">manage your credit risk with the right tool. MDFin credit scoring allows you to get the maximum impact while implementing and optimizing your credit strategies</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-anti.svg" alt="icon-anti"></div>
+				<div class="item__text">
+					<div class="item__text-title">Anti-Fraud Scoring - </div>
+					<div class="item__text-text">prevent financial losses caused by the activities of fraudsters. Detect potential fraud with our Anti-Fraud Scoring systems.</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__icon"><img src="templates/mdfin/images/icon-anti2.svg" alt="icon-anti2"></div>
+				<div class="item__text">
+					<div class="item__text-title">Anti-Fraud Photo Scoring - </div>
+					<div class="item__text-text">don't give fraudsters the slightest chance of getting a loan from you. Check the borrower's photo for signs of fraud using our technologies. </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="implement">
+			<div class="section-title">Implement scoring in 1 day </div>
+			<div class="wrap">
+				<div class="implement__list">
+					<div class="item">
+						<div class="item__icon"><img src="templates/mdfin/images/icon-aarw.svg" alt="icon-aarw"></div>
+						<div class="item__text">Choose the scoring that suits your needs. Get advice from our risk specialists and choose the right service for you </div>
+					</div>
+					<div class="item">
+						<div class="item__icon"><img src="templates/mdfin/images/icon-qult.svg" alt="icon-qult"></div>
+						<div class="item__text">Estimate quality of our services at no charge. Check the scoring quality - get 1000 free calculations of your clients' scoring </div>
+					</div>
+					<div class="item">
+						<div class="item__icon"><img src="templates/mdfin/images/icon-arrup.svg" alt="icon-arrup"></div>
+						<div class="item__text">Benefit from our cooperation. You know what you're paying for. Set charging for the number of requests </div>
+					</div>
+					<div class="item">
+						<div class="item__icon"><img src="templates/mdfin/images/icon-api.svg" alt="icon-api"></div>
+						<div class="item__text">Fast API-integration</div>
+					</div>
+				</div>
+				<div class="implement__img"><img src="templates/mdfin/images/icon-analysis.svg" alt="icon-analysis"></div>
+			</div>
+
+			<div class="implement-txt">Start reaping the benefits tomorrow!</div>
+
+			<div class="numbers">
+				<div class="item">
+					<div class="item__num">12</div>
+					<div class="item__div">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="item__text">Scoring that cover all business cases: for short and long products, for new and repeat borrowers </div>
+					<div class="item__icon"><img src="templates/mdfin/images/icon-tick.svg" alt="icon-tick"></div>
+				</div>
+				<div class="item">
+					<div class="item__num">1 250 000+</div>
+					<div class="item__div">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="item__text">A sample of real clients on which the scoring services were based </div>
+					<div class="item__icon"><img src="templates/mdfin/images/icon-tick.svg" alt="icon-tick"></div>
+				</div>
+				<div class="item">
+					<div class="item__num">87%</div>
+					<div class="item__div">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="item__text">The average AUC of our scoring</div>
+					<div class="item__icon"><img src="templates/mdfin/images/icon-tick.svg" alt="icon-tick"></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="efficiency">
+			<div class="section-title">Run your business with maximum efficiency. </div>
+			<div class="efficiency__text">Manage your risk with the Finance Scoring by MDFin. Start now! </div>
+		</div> 
+	</div>
+
+	<div class="req-demo">
+		<div class="inner">
+			<div class="btn-wrap"><a href="#form-7">Request a Demo</a></div>
+		</div>
+	</div>
+</div>

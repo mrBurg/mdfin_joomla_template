@@ -1,0 +1,52 @@
+@import '../services/constants.scss';
+
+.sidebar {
+  margin: 0 1em 0.5em 0;
+
+  @include respond(xs) {
+    margin: 0;
+  }
+
+  @media (min-width: #{$xs + 1}px) and (max-width: #{$md}px) {
+    float: left
+  }
+
+  .left-menu {
+    width: 13.5em;
+    background: $gray-light;
+
+    @include respond(xs) {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      
+      li {
+        a {
+          font-family: $font-medium;
+          color: $gray-dark;
+          display: inline-block;
+          border-left: 5px solid transparent;
+          padding: 1em 2em;
+
+          @include respond(xs) {
+            padding: 0.5em 2em;
+          }
+
+          &:hover {
+            color: $blue-light;
+            border-left: 5px solid $blue-light;
+            text-decoration: none;
+          }
+        }
+
+        &.active a {
+          color: $blue-light;
+          border-left: 5px solid $blue-light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
